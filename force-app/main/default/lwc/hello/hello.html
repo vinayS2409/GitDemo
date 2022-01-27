@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Exam App">
+        <div class="slds-align_absolute-center" style="height:5rem">
+            <template for:each={myQuestions} for:item="quiz">
+                    <div key={quiz.id}>
+<div><strong> {quiz.id} - {quiz.Question} </strong></div>
+                    </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
